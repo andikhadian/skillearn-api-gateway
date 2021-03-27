@@ -4,7 +4,7 @@ const { APP_NAME } = process.env
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('home');
+  res.render('index', { title: 'API GATEWAY' });
 });
 
 module.exports = router;
